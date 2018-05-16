@@ -107,7 +107,9 @@ Hello World! I have been seen 1 times.
 
 Refresh the page and the number should increment.
 
-Typing control-c will shutdown the containers.  If you started Compose with docker-compose up -d, you’ll probably want to stop your services once you’ve finished with them:
+List images with `docker images`, and then running containers with `docker ps` to see the images and containers that resulted from `docker-compose up`  
+
+Typing control-c will shut down the containers.  If you started Compose with docker-compose up -d, you’ll probably want to stop your services once you’ve finished with them:
 ```
 docker-compose stop
 ```
