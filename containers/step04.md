@@ -24,7 +24,7 @@ RUN apt-get -y update && apt-get install -y fortunes
 CMD /usr/games/fortune -a | cowsay
 ```
 
-For this exercise, we used the docker/whalesay:latest image, which is based on Ubuntu Liunx distribution. 
+For this exercise, we used the docker/whalesay:latest image, which is based on Ubuntu Linux distribution. 
 
 The RUN statement will execute the command and record changes to the file system.  It will NOT record the state of processes or start daemons.
 
