@@ -36,6 +36,7 @@ Make a change to the container and exit
 ```
 touch /tmp/foo
 ls /tmp/foo
+exit
 ```
 
 IN A NEW WINDOW, with the container still running:
@@ -47,6 +48,17 @@ docker diff <Container ID>
 Commit the container
 ```
 docker commit <Container ID> ubuntu-foo
+```
+
+List Images
+```
+docker images
+```
+
+Notice the new ubuntu-foo image
+
+Run the container
+```
 docker run -it ubuntu-foo /bin/bash
 ls /tmp/foo
 ```
