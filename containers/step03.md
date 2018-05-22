@@ -8,6 +8,7 @@ Start an Ubuntu Container:
 ```
 docker run -it ubuntu /bin/bash
 ```
+(Note: If this command fails in Docker for Windows, try `docker run -it ubuntu //bin/bash` or `winpty docker run -it ubuntu //bin/bash`.)
 
 Make a change to the container and exit
 ```
