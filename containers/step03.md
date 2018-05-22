@@ -3,6 +3,8 @@
 
 Images of containers are immutable.  (i.e. when you start a container, and make file modifications, it does not modify the original image.)  However, you can create a new image based off of the modified container.
 
+The `commit` command provides an easy and useful way to debug and iteratively perfect your container. When you iterate over a container configuration with `commit`, take good notes and incorporate the changes you want to keep in the Dockerfile used to manage your image in a documented and maintainable way.
+
 ### Start and modify a Ubuntu container 
 Start an Ubuntu Container:
 ```
